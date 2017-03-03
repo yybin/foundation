@@ -1,0 +1,173 @@
+/**
+ * Created by Yan on 2017/3/2.
+ */
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+textarea {
+    resize: none;
+}
+
+/*防止拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+    color: #666;
+    background: #fff;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+
+.header{
+    height:180px;
+    border-bottom: 2px solid #ff6600;
+}
+.header h1 a{
+    display: inline-block;
+    padding-top: 50px;
+    width: 390px;
+    text-indent: -9999px;
+    height:71px;
+    background: url("../images/logo.png") no-repeat left center;
+}
+.header h1 .hot-phone{
+    width: 300px;
+    text-align: right;
+    padding-top: 30px;
+    font-size: 14px;
+}
+.header h1 .hot-phone span{
+    display: block;
+    line-height: 30px;
+    text-decoration: none;
+}
+.header h1 .hot-phone b{
+    display: inline-block;
+    padding-top: 6px;
+    font-size: 20px;
+    color:#ff6600;
+}
+.header ul{
+    padding-top: 19px;
+}
+.header ul li{
+    display: inline-block;
+    width: 146px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+.header ul li a{
+    display: inline-block;
+}
+.header ul li .active,.header ul li a:hover{
+    background: #ff6600;
+    color: #fff;
+    width: 100%;
+    height:100%;
+}
