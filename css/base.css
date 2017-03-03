@@ -171,3 +171,43 @@ s, i, em {
     width: 100%;
     height:100%;
 }
+.main .fl{
+    width: 780px;
+    height: 500px;
+}
+.main .fr{
+    width: 350px;
+    height: 500px;
+    background: green;
+}
+.main .swiper-container{
+    height: 380px;
+}
+.swiper-slide{
+
+}
+.swiper-pagination{
+    text-align: right;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets{
+    bottom: 15px;
+}
+.swiper-pagination .swiper-pagination-bullet:last-child{
+    margin-right: 60px;
+}
+.swiper-tips-bg{
+    width: 100%;
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size:14px;
+    text-indent: 20px;
+    background: rgba(0,0,0,0.6);
+    bottom:0px;
+    left: 0px;
+    z-index: 8;
+}
+.swiper-pagination-bullet-active{
+    background: #fff;
+}
