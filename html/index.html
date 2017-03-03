@@ -2,6 +2,7 @@
 <head>
     <title>北京英硕扶老公益基金会</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="../bower_components/swiper/dist/css/swiper.min.css">
     <link rel="stylesheet" href="../css/base.css">
 </head>
 <body>
@@ -25,12 +26,53 @@
             </ul>
         </div>
     </div>
+    <div class="w main">
+        <div class="tips">111</div>
+        <div class="fl">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-tips-bg">99公益日一起爱</div>
+            </div>
+
+        </div>
+        <div class="fr">
+
+        </div>
+    </div>
 
 
 
-<!--引入jQuery-->
-<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <!--引入jQuery-->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/swiper/dist/js/swiper.jquery.min.js"></script>
 
+    <script>
+        $(function () {
+            var mySwiper = new Swiper ('.swiper-container', {
+                direction: 'horizontal',
+                loop: true,
+                height:200,
+                // 如果需要分页器,
+                autoplay:2000,
+                pagination: '.swiper-pagination',
+
+                // 如果需要前进后退按钮
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+
+            })
+        });
+    </script>
 
 </body>
 </html>
