@@ -50,7 +50,7 @@ table {
 
 body {
     font: 12px/150% Arial, Verdana, "\5b8b\4f53";
-    color: #666;
+    color: #333;
     background: #fff;
 }
 
@@ -68,7 +68,7 @@ body {
 }
 
 a {
-    color: #666;
+    color: #333;
     text-decoration: none;
 }
 
@@ -183,12 +183,20 @@ s, i, em {
     float: left;
     width: 100%;
 }
+.main .fl .section{
+    margin-top: 30px;
+    width: 370px;
+    height: 270px;
+    float: left;
+}
 .main .fr div:first-child{
     height: 380px;
     margin-bottom: 30px;
     position: relative;
 }
-
+.main .fl .section:nth-child(2n-1){
+    float: right;
+}
 .main .swiper-container{
     height: 380px;
 }
@@ -244,6 +252,22 @@ s, i, em {
     float: right;
     font-size: 12px;
 }
+.section h4 a:hover{
+    color: #000;
+}
+.section h4 span::after{
+    content: '>';
+    display: inline-block;
+    width: 16px;
+    height:16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+    background: #eee;
+
+}
 .section figure{
     margin: 10px 0;
     float: left;
@@ -280,8 +304,14 @@ s, i, em {
 }
 .section ul li{
     font-size: 14px;
-    height: 40px;
-    line-height: 40px;
+    height: 36px;
+    line-height: 36px;
+}
+.section ul li span{
+    float: right;
+}
+.section ul li:first-child a{
+    color: #ff6600;
 }
 .section .btn{
     position: absolute;
