@@ -3,7 +3,7 @@
  */
 @charset "UTF-8";
 /*css 初始化 */
-html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img ,figure,caption{
     margin: 0;
     padding: 0;
 }
@@ -178,14 +178,21 @@ s, i, em {
 .main .fr{
     width: 350px;
     height: 500px;
-    background: green;
 }
+.main .fr>div{
+    float: left;
+    width: 100%;
+}
+.main .fr div:first-child{
+    height: 380px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
 .main .swiper-container{
     height: 380px;
 }
-.swiper-slide{
 
-}
 .swiper-pagination{
     text-align: right;
 }
@@ -210,4 +217,83 @@ s, i, em {
 }
 .swiper-pagination-bullet-active{
     background: #fff;
+}
+.section h4{
+    height: 40px;
+    line-height: 45px;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+}
+.section h4 b{
+    display: inline-block;
+    height: 40px;
+    padding: 0 2px;
+    position: relative;
+}
+.section h4 b::before{
+    content: ' ';
+    position: absolute;
+    display: inline-block;
+    width:100%;
+    left: 0px;
+    bottom: -2px;
+    height: 2px;
+    background: red;
+}
+.section h4 span{
+    float: right;
+    font-size: 12px;
+}
+.section figure{
+    margin: 10px 0;
+    float: left;
+}
+.section figure img{
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin-right: 14px;
+}
+.section figure figcaption{
+    display: inline-block;
+    width: 186px;
+    float: right;
+}
+.section figure figcaption h5{
+    height: 25px;
+    line-height: 25px;
+}
+.section figure figcaption h5 a{
+    color: #ff6600;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.section figure figcaption div{
+    height: 75px;
+    font-size: 12px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.section ul{
+    clear: both;
+}
+.section ul li{
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+.section .btn{
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background: #ff6600;
+    color: #fff;
+    text-align: center;
+}
+.section .btn a{
+    color: #fff;
+    letter-spacing: 1px;
 }
