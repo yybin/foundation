@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>北京英硕扶老公益基金会</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="../bower_components/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="w">
+        <h1><a href="#">北京英硕扶老公益基金会</a>
+            <div class="fr hot-phone">
+                <span>基金会热线</span><b>12345678911</b>
+            </div>
+        </h1>
+        <ul>
+            <li><a href="./index.html" >首页</a></li>
+            <li><a href="./about.html" >关于我们</a></li>
+            <li><a href="./gongyi.html">公益项目</a></li>
+            <li><a href="./zixun.html">最新资讯</a></li>
+            <li><a href="./gonggao.html">公示公告</a></li>
+            <li><a href="./activity.html">活动通知</a></li>
+            <li><a href="./zhengce.html">政策阅读</a></li>
+            <li><a href="./juankuan.html" class="active">我要捐赠</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!--引入jQuery-->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/swiper/dist/js/swiper.jquery.min.js"></script>
+
+<script>
+    $(function () {
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            height:200,
+            // 如果需要分页器,
+            autoplay:2000,
+            pagination: '.swiper-pagination',
+
+            // 如果需要前进后退按钮
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+
+        })
+    });
+</script>
+
+</body>
+</html>
